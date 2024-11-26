@@ -15,17 +15,17 @@ public class CalcTest {
     }
 
     @Test
-    @DisplayName("10 + 5")
+    @DisplayName("(3 + 5) * 5")
     public void t2() {
-        int rs = Calc.run("10 + 5");
+        int rs = Calc.run("8 * 5");
 
-        assertThat(rs).isEqualTo(15);
+        assertThat(rs).isEqualTo(40);
     }
 
     @Test
-    @DisplayName("20 + 5")
+    @DisplayName("(3 + 5) * 5 + -10")
     public void t3() {
-        int rs = Calc.run("20 + 5");
+        int rs = Calc.run("40 + -10");
 
         assertThat(rs).isEqualTo(25);
     }
