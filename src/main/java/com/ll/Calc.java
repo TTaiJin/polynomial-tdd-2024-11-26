@@ -14,6 +14,6 @@ public class Calc {
             int num2 = Integer.parseInt(sBits[1]);
             return num1 * num2;
         }
-        return 0;
+        return -1;
     }
 }

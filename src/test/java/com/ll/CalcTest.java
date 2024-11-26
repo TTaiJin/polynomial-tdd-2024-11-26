@@ -38,5 +38,13 @@ public class CalcTest {
         assertThat(rs).isEqualTo(300);
     }
 
+    @Test
+    @DisplayName("((3 + 5) * 5 + -10) * 10 / 5")
+    public void t5() {
+        int rs = Calc.run("300 / 10");
+
+        assertThat(rs).isEqualTo(30);
+    }
+
 
 }
