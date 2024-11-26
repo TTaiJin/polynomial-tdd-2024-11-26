@@ -27,6 +27,16 @@ public class CalcTest {
     public void t3() {
         int rs = Calc.run("40 + -10");
 
-        assertThat(rs).isEqualTo(25);
+        assertThat(rs).isEqualTo(30);
     }
+
+    @Test
+    @DisplayName("((3 + 5) * 5 + -10) * 10")
+    public void t4() {
+        int rs = Calc.run("30 * 10");
+
+        assertThat(rs).isEqualTo(300);
+    }
+
+
 }
